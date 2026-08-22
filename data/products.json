@@ -1,0 +1,127 @@
+[
+  {
+    "id": "1",
+    "title": "Linen Wrap Dress",
+    "color": "Black Striped Green",
+    "size": "Size M",
+    "price": "₦28,500",
+    "numericPrice": 28500,
+    "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop"
+    ],
+    "hasViewButton": true,
+    "category": "Dresses",
+    "storeName": "Veekee Fashion house.ng",
+    "storeAvatar": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=120&auto=format&fit=crop",
+    "description": "Elegant wrap dress made from breathable linen. Perfect for brunch, work or evening outings.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Off White", "hex": "#ffffff", "border": true },
+      { "name": "Black", "hex": "#0b0b0b" },
+      { "name": "Terracotta Orange", "hex": "#e66a2c" },
+      { "name": "Lavender", "hex": "#b07af7" },
+      { "name": "Crimson Red", "hex": "#b91c1c" }
+    ],
+    "inStock": true
+  },
+  {
+    "id": "2",
+    "title": "Co-ord Set",
+    "color": "Beige",
+    "size": "Size M",
+    "price": "₦35,000",
+    "numericPrice": 35000,
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop"
+    ],
+    "hasViewButton": true,
+    "category": "Co-ords",
+    "storeName": "Veekee Fashion house.ng",
+    "storeAvatar": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=120&auto=format&fit=crop",
+    "description": "Tailored luxury two-piece set crafted from premium breathable linen. Designed for versatile all-day styling.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Sand Beige", "hex": "#e4d3ba" },
+      { "name": "Black", "hex": "#0b0b0b" },
+      { "name": "Emerald Green", "hex": "#003934" }
+    ],
+    "inStock": true
+  },
+  {
+    "id": "3",
+    "title": "Oversized Shirt",
+    "color": "White",
+    "size": "Size M",
+    "price": "₦22,000",
+    "numericPrice": 22000,
+    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop"
+    ],
+    "hasViewButton": true,
+    "category": "Tops",
+    "storeName": "Veekee Fashion house.ng",
+    "storeAvatar": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=120&auto=format&fit=crop",
+    "description": "Crisp modern oversized poplin silhouette featuring dropped shoulders and relaxed cuffs.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "White", "hex": "#ffffff", "border": true },
+      { "name": "Black", "hex": "#0b0b0b" },
+      { "name": "Sky Blue", "hex": "#7dd3fc" }
+    ],
+    "inStock": true
+  },
+  {
+    "id": "4",
+    "title": "Pleated Wide Pants",
+    "color": "Sand",
+    "size": "Size M",
+    "price": "₦24,000",
+    "numericPrice": 24000,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800&auto=format&fit=crop"
+    ],
+    "hasViewButton": true,
+    "category": "Bottoms",
+    "storeName": "Veekee Fashion house.ng",
+    "storeAvatar": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=120&auto=format&fit=crop",
+    "description": "High-waisted wide-leg tailored trousers with structured front pleats for an elongated silhouette.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Sand", "hex": "#d6c4a8" },
+      { "name": "Black", "hex": "#0b0b0b" },
+      { "name": "Olive", "hex": "#4a5d4e" }
+    ],
+    "inStock": true
+  },
+  {
+    "id": "5",
+    "title": "Linen Pants",
+    "color": "Olive Green",
+    "size": "Size M",
+    "price": "₦26,000",
+    "numericPrice": 26000,
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop"
+    ],
+    "hasViewButton": true,
+    "category": "Bottoms",
+    "storeName": "Veekee Fashion house.ng",
+    "storeAvatar": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=120&auto=format&fit=crop",
+    "description": "Relaxed breezy linen trousers dyed in rich olive tones with an elasticated waistband and deep pockets.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Olive Green", "hex": "#3d5a45" },
+      { "name": "Black", "hex": "#0b0b0b" },
+      { "name": "Oatmeal", "hex": "#ebe6dc" }
+    ],
+    "inStock": true
+  }
+]

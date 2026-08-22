@@ -24,7 +24,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
       <div className="flex items-center justify-end gap-5">
         {/* View Store Front */}
         <a
-          href="#storefront"
+          href="/"
           className="flex items-center gap-1.5 text-sm font-semibold text-[#0b0b0b] hover:text-[#003934] transition"
         >
           <span>View Store Front</span>
