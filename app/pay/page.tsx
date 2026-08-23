@@ -28,7 +28,7 @@ function WhatsAppPaymentContent() {
     setIsRedirecting(true);
 
     // Format pre-filled WhatsApp message based on the user's requested template
-    const storeNumber = "2349035062488"; // User specified +2349035062488
+    const storeNumber = "2348166080757";
     const storeName = product.storeName || "Veekee House";
     
     let message = `Hi ${storeName} 👋\nI'm interested in this item from your instagram\n\nProduct: ${product.title}\nColor: ${selectedColor}\nSize: ${selectedSize}\nPrice: ${product.price}\n\nMy details:\nName: ${customerName}\nEmail Address: ${customerEmail}\nPhone: ${customerPhone}`;
@@ -57,27 +57,13 @@ function WhatsAppPaymentContent() {
       <header className="fixed top-0 inset-x-0 bg-[#fffef0]/95 backdrop-blur-sm z-50 border-b border-gray-100/50">
         <div className="w-full max-w-md mx-auto flex items-center justify-between px-5 py-3">
           {/* Syncra Logo */}
-          <div className="flex items-center gap-1.5">
-            <div className="text-[#003934] flex items-center justify-center">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <line x1="12" y1="2" x2="12" y2="22" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
-                <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
-              </svg>
-            </div>
-            <span className="text-[17px] font-bold tracking-tight text-[#003934]">
-              Syncra
-            </span>
-          </div>
+          <Link href="/" className="flex items-center cursor-pointer">
+            <img
+              src="https://res.cloudinary.com/de3ryzm92/image/upload/v1787430731/logo_pzlaia.png"
+              alt="Syncra Logo"
+              className="h-8 md:h-9 w-auto object-contain"
+            />
+          </Link>
 
           {/* Options Menu */}
           <button
@@ -103,89 +89,14 @@ function WhatsAppPaymentContent() {
             <ArrowLeft className="w-6 h-6 stroke-[1.5]" />
           </button>
 
-          {/* Hero Thumbs-Up Graphic */}
+          {/* Hero Graphic */}
           <div className="flex justify-center mt-2 mb-6">
             <div className="relative w-36 h-36 flex items-center justify-center">
-              <svg
-                viewBox="0 0 200 200"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-full drop-shadow-sm"
-              >
-                {/* Radiating burst lines on top right */}
-                <line
-                  x1="126"
-                  y1="22"
-                  x2="126"
-                  y2="34"
-                  stroke="#0b0b0b"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-                <line
-                  x1="138"
-                  y1="25"
-                  x2="133"
-                  y2="36"
-                  stroke="#0b0b0b"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-                <line
-                  x1="146"
-                  y1="34"
-                  x2="137"
-                  y2="41"
-                  stroke="#0b0b0b"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-
-                {/* Dark Green Rounded Speech Bubble Background */}
-                <path
-                  d="M62 38 C90 34, 130 38, 134 68 C138 98, 136 120, 118 135 C98 150, 68 145, 54 125 C48 116, 52 75, 54 58 C55 45, 56 39, 62 38 Z"
-                  fill="#003934"
-                />
-
-                {/* Stylized White Hand with Black Outline */}
-                {/* Arm and Wrist Base */}
-                <path
-                  d="M54 148 C68 122, 90 95, 96 75 C102 55, 100 42, 104 42 C108 42, 112 50, 110 65 C118 64, 126 70, 126 77 C126 84, 120 87, 126 90 C128 97, 120 102, 124 105 C126 112, 112 118, 106 122 C95 128, 78 142, 54 148 Z"
-                  fill="#ffffff"
-                  stroke="#0b0b0b"
-                  strokeWidth="3.2"
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                />
-
-                {/* Thumb Up Details */}
-                <path
-                  d="M96 75 C98 52, 100 42, 104 42 C107 42, 110 48, 109 60 C108 68, 105 76, 100 80"
-                  stroke="#0b0b0b"
-                  strokeWidth="3.2"
-                  strokeLinecap="round"
-                />
-
-                {/* Knuckle Lines */}
-                <path
-                  d="M109 72 C115 70, 123 72, 124 77 C124 82, 116 83, 105 84"
-                  stroke="#0b0b0b"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M106 87 C114 86, 122 87, 123 92 C123 96, 116 98, 106 99"
-                  stroke="#0b0b0b"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M107 101 C114 101, 120 102, 121 106 C121 110, 115 112, 106 113"
-                  stroke="#0b0b0b"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-              </svg>
+              <img
+                src="https://res.cloudinary.com/de3ryzm92/image/upload/v1787430731/handshake_lyvnjz.png"
+                alt="Handshake"
+                className="w-full h-full object-contain drop-shadow-sm"
+              />
             </div>
           </div>
 

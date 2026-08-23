@@ -84,27 +84,12 @@ export default function Sidebar({
       {/* Top Header & Navigation */}
       <div className="flex flex-col gap-5">
         {/* Syncra Logo */}
-        <div className="flex items-center gap-3 px-3">
-          {/* Custom Asterisk Logo */}
-          <div className="relative flex items-center justify-center w-8 h-8 text-white">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.75"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-7 h-7 drop-shadow-sm"
-            >
-              <line x1="12" y1="2" x2="12" y2="22" />
-              <line x1="2" y1="12" x2="22" y2="12" />
-              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
-              <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
-            </svg>
-          </div>
-          <span className="text-2xl font-bold tracking-tight text-white font-sans">
-            Syncra
-          </span>
+        <div className="flex items-center px-3 mb-1">
+          <img
+            src="https://res.cloudinary.com/de3ryzm92/image/upload/v1787482301/logo_white_mtmmon.png"
+            alt="Syncra Logo"
+            className="h-9 md:h-12 w-auto object-contain"
+          />
         </div>
 
         {/* Store Profile Selector */}

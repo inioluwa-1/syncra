@@ -88,27 +88,13 @@ function CheckoutForm() {
       <header className="fixed top-0 inset-x-0 bg-[#fffef0]/95 backdrop-blur-sm z-50 border-b border-gray-100/50">
         <div className="w-full max-w-md mx-auto flex items-center justify-between px-5 py-3">
           {/* Syncra Logo */}
-          <div className="flex items-center gap-1.5">
-            <div className="text-[#003934] flex items-center justify-center">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <line x1="12" y1="2" x2="12" y2="22" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
-                <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
-              </svg>
-            </div>
-            <span className="text-[17px] font-bold tracking-tight text-[#003934]">
-              Syncra
-            </span>
-          </div>
+          <Link href="/" className="flex items-center cursor-pointer">
+            <img
+              src="https://res.cloudinary.com/de3ryzm92/image/upload/v1787430731/logo_pzlaia.png"
+              alt="Syncra Logo"
+              className="h-8 md:h-9 w-auto object-contain"
+            />
+          </Link>
 
           {/* Options Menu */}
           <button

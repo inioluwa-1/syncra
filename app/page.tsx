@@ -12,6 +12,7 @@ import {
   Search,
   Sparkles,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import productsData from "@/data/products.json";
 
 export interface Product {
@@ -29,6 +30,7 @@ export interface Product {
 }
 
 export default function StoreFrontPage() {
+  const router = useRouter();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [cartCount, setCartCount] = useState(0);
@@ -59,6 +61,14 @@ export default function StoreFrontPage() {
     setTimeout(() => {
       setAddedSuccess(false);
       setSelectedProduct(null);
+      
+      // Send them straight to checkout with this product's details!
+      const params = new URLSearchParams({
+        productId: product.id,
+        color: product.color,
+        size: product.size,
+      });
+      router.push(`/checkout?${params.toString()}`);
     }, 1000);
   };
 
@@ -68,27 +78,13 @@ export default function StoreFrontPage() {
       <header className="fixed top-0 inset-x-0 bg-[#fffef0]/95 backdrop-blur-sm z-50 border-b border-gray-100/50">
         <div className="w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto flex items-center justify-between px-5 py-3">
           {/* Syncra Logo */}
-          <div className="flex items-center gap-1.5">
-            <div className="text-[#003934] flex items-center justify-center">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <line x1="12" y1="2" x2="12" y2="22" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
-                <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
-              </svg>
-            </div>
-            <span className="text-[17px] font-bold tracking-tight text-[#003934]">
-              Syncra
-            </span>
-          </div>
+          <Link href="/" className="flex items-center cursor-pointer">
+            <img
+              src="https://res.cloudinary.com/de3ryzm92/image/upload/v1787430731/logo_pzlaia.png"
+              alt="Syncra Logo"
+              className="h-8 md:h-9 w-auto object-contain"
+            />
+          </Link>
 
           {/* Options Menu */}
           <button
@@ -137,9 +133,9 @@ export default function StoreFrontPage() {
           <div className="grid grid-cols-2 gap-3 sm:gap-5">
             {filteredProducts.map((product) => (
               <div key={product.id} className="flex flex-col group">
-                {/* Product Card Image */}
-                <Link
-                  href={`/product/${product.id}`}
+                {/* Product Card Image (Opens Quick View Modal) */}
+                <div
+                  onClick={() => setSelectedProduct(product)}
                   className="relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden bg-gray-200 cursor-pointer shadow-sm group-hover:shadow-md transition-all duration-300 block"
                 >
                   <img
@@ -152,7 +148,7 @@ export default function StoreFrontPage() {
                       Out of stock
                     </div>
                   )}
-                </Link>
+                </div>
 
                 {/* Product Info */}
                 <Link
@@ -250,23 +246,7 @@ export default function StoreFrontPage() {
               </p>
             )}
 
-            <button
-              onClick={() => handleAddToCart(selectedProduct)}
-              disabled={addedSuccess}
-              className="w-full mt-5 py-3 bg-[#003934] text-white font-semibold text-sm rounded-xl hover:bg-[#002a26] transition flex items-center justify-center gap-2 cursor-pointer shadow-sm"
-            >
-              {addedSuccess ? (
-                <>
-                  <Check className="w-4 h-4 text-emerald-300" />
-                  <span>Added to Order</span>
-                </>
-              ) : (
-                <>
-                  <ShoppingBag className="w-4 h-4" />
-                  <span>Order on Syncra</span>
-                </>
-              )}
-            </button>
+
           </div>
         </div>
       )}
